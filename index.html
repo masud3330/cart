@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shopping store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="navbar">
+        <h2>Clothing Store</h2>
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-ammount">
+                0
+            </div>
+        </div>
+    </div>
+
+    <div class="product-area">
+        <div class="product">
+            <img src="images/shirt.jpeg" alt="">
+            <div class="product-name">
+                <h3>Shirt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum, provident saepe eligendi modi corrupti magnam quasi eos iure id dolor illo possimus, ab similique.</p>
+                <div class="price">
+                    <h2 >$ <span id="shirtprice">50</span></h2>
+                    <div class="button">
+                        <button onclick="decrement('shirtCount','shirtprice')" id="minus-btn" >-</button>
+                        <input type="text" value="1" id="shirtCount">
+                        <button onclick="increment('shirtCount', 'shirtprice')" id="plus-btn">+</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/watch.jpeg" alt="">
+            <div class="product-name">
+                <h3>Watch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum, provident saepe eligendi modi corrupti magnam quasi eos iure id dolor illo possimus, ab similique.</p>
+                <div class="price">
+                    <h2>$<span id="watchprice" >110</span></h2>
+                    <div class="button">
+                        <button id="minus-btn"  onclick="decrement('watchCount', 'watchprice')">-</button>
+                        <input type="text" value="1" id="watchCount">
+                        <button id="plus-btn" onclick="increment('watchCount', 'watchprice')">+</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/book.jpeg" alt="">
+            <div class="product-name">
+                <h3>Book</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum, provident saepe eligendi modi corrupti magnam quasi eos iure id dolor illo possimus, ab similique.</p>
+                <div class="price">
+                    <h2>$<span id="bookprice" >65</span></h2>
+                    <div class="button">
+                        <button id="minus-btn" onclick="decrement('bookCount', 'bookprice')">-</button>
+                        <input type="text" value="1" id="bookCount">
+                        <button id="plus-btn" onclick="increment('bookCount', 'bookprice')" >+</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/Backpack.jpeg" alt="">
+            <div class="product-name">
+                <h3>Backpack</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nostrum, provident saepe eligendi modi corrupti magnam quasi eos iure id dolor illo possimus, ab similique.</p>
+                <div class="price">
+                    <h2>$ <span id="backpackprice" >120</span></h2>
+                    <div class="button">
+                        <button id="minus-btn"  onclick="decrement('backpackCount', 'backpackprice')">-</button>
+                        <input type="text" value="1" id="backpackCount">
+                        <button id="plus-btn" onclick="increment('backpackCount', 'backpackprice')" >+</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="price-area">
+        <div class="total-price">
+           <h4> Total Price : </h4>
+           <div class="ammount-box">
+            <input type="text" name="" id="" value="0" class="price-calculate" >
+           </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
